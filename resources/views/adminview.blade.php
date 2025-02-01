@@ -83,7 +83,7 @@
                 </div>
                 <div class="card-footer ">
                     <hr>
-                    <a href="{{ route('tindaklanjut') }}">
+                    <a href="{{ route('hasilRTL.index') }}">
                         <div class="stats">
                             <i class="fas fa-arrow-right"></i>
                             <span style="color: gray;">lihat detail</span>

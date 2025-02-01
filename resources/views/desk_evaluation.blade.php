@@ -32,7 +32,7 @@
                             @if ($user->role === 'Auditor' || $user->role === 'Admin')
                                 <button data-toggle="modal" data-target="#tambahPertanyaanDeskEvaluation"
                                     class="btn btn-primary">
-                                    <i class="fas fa-plus"></i> Tambah Pertanyaan
+                                    <i class="fas fa-plus"></i> Tambah Penilaian
                                 </button>
                             @endif
                         </div>
@@ -291,7 +291,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="tambahPertanyaanDeskEvaluationLabel">Tambah Pertanyaan</h5>
+                        <h5 class="modal-title" id="tambahPertanyaanDeskEvaluationLabel">Tambah Uraian Temuan</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -303,8 +303,8 @@
                             <input type="hidden" name="standart_id" id="standart_id" value="{{ $standart->id }}">
 
                             <div class="form-group">
-                                <label for="pertanyaan_DeskEvaluation" class="col-form-label">Masukkan Pertanyaan
-                                    Baru</label>
+                                <label for="pertanyaan_DeskEvaluation" class="col-form-label">Masukkan Uraian Temuan / Deskripsi / Dokumen Terkait :
+                                    </label>
                                 <textarea class="form-control" id="pertanyaan_DeskEvaluation" name="pertanyaan_DeskEvaluation" rows="5"
                                     required></textarea>
                             </div>
@@ -360,7 +360,7 @@
                         plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
                         toolbar: 'fullscreen preview bold italic alignleft aligncenter alignright bullist numlist outdent indent',
                         menubar: false,
-                        height: 100,
+                        height: 170,
                         relative_urls: false,
                     });
                 }
